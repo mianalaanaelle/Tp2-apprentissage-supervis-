@@ -50,7 +50,14 @@ head(prev)
 lines(sort(data$circ),sort(prev[,2]),col=4)
 lines(sort(circ),sort(prev[,3]),col=4)
 
+#Question 9
+#Non 
+#Les intervalles des prévision sont le seul endroit où l'hypothèse de la normalité est importante
 
+
+##Vérification de la normalité des résidus
+hist(residuals(reg))
+qqnorm(residuals(reg))
 
 
 
